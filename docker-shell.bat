@@ -1,0 +1,2 @@
+@echo off
+docker run -it -v ${pwd}/docker/build/cache:/trinitycore/build -v ${pwd}/docker/worldserver/bin:/binworldserver -v ${pwd}/docker/authserver/bin:/binauthserver -v ${pwd}/docker/lib:/binlib --entrypoint /bin/bash tcbuild

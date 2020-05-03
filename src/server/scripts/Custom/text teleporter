@@ -1,0 +1,8 @@
+case 9000000://Guild Bank
+			player->GetSession()->SendShowGuildBank(player->GetSession()->GetPlayer()->GetGUID());
+			break;
+			
+			
+case 20000000 // player Options
+		AddGossipItemFor(player, 0, "|TInterface\\icons\\inv_misc_bag_07_green:28:28|tGuild Bank", GOSSIP_SENDER_MAIN, 9000000);
+		break;

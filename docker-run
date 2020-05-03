@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+docker run -it \
+    -v /$(pwd)/docker/build/cache:/trinitycore/build \
+    -v /$(pwd)/docker/worldserver/bin:/binworldserver \
+    -v /$(pwd)/docker/authserver/bin:/binauthserver \
+    -v /$(pwd)/docker/lib:/binlib \
+    -v /$(pwd)/docker/game:/game \
+    --entrypoint /bin/bash \
+    tcbuild
